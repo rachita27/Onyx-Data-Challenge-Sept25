@@ -1,11 +1,13 @@
 📌 Credit Risk Analytics Challenge – Nova Bank
 
 
+
 🔹 Project Overview
 
 This project was developed as part of the Nova Bank Credit Risk Analytics Challenge organized by Onyx Data and ZoomCharts (#DataDNA).
 
 Nova Bank’s challenge:
+
 👉 How to make lending fair and accessible while protecting itself from unnecessary risk.
 
 My solution combines machine learning (XGBoost) with a Power BI dashboard and a Streamlit app to provide both predictive accuracy and business-friendly insights.
@@ -93,8 +95,8 @@ Jupyter Notebooks → data prep, model training, threshold analysis.
 Python → Pandas, Scikit-learn, XGBoost, Joblib
 Power BI → Interactive dashboarding
 
-📊 Screenshots from my Power BI dashboard below 👇
-(Insert Combined_Dashboard.png)
+
+📷 Dashboard Preview ![Dashboard Preview](Fitness_Onyx_Challenge.png)
 
 🔹 Recognition
 
