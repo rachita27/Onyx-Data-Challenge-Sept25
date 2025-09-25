@@ -35,8 +35,12 @@ My solution combines machine learning (XGBoost) with a Power BI dashboard and a 
     F1 Score: 82%
     ROC-AUC: 85.6%
 
+
+
 ⚖️ Why F1?
 Dataset is imbalanced → accuracy is misleading. F1 ensures the model is neither too strict (precision-heavy, rejecting good borrowers) nor too lenient (recall-heavy, approving risky borrowers).
+
+
 
 📌 Power BI Dashboard
 
@@ -53,36 +57,36 @@ Three tabs to help decision-makers:
    
     Flexibility: user can select threshold → groups update dynamically.
 
-🔹 Cost-Sensitive Thresholding & Risk Profiles
+2) Cost-Sensitive Thresholding & Risk Profiles
 
-Traditional 0.5 cutoff was replaced with a cost-based threshold:
+    Traditional 0.5 cutoff was replaced with a cost-based threshold:
+    
+    Total Cost
+    Cost=(FN×LGD×EAD)+(FP×CostFPE)
+    Total Cost= FN Cost + FP Cost = (LGD× ∑EAD)+(α× (∑ Interest Income) +OpsCost])
+    Where:
+    •	FN = count of missed defaulters,
+    •	EAD = actual loan amount per FN,
+    •	LGD = assumed recovery fraction (say 0.6), that user can select in slicer
+    •	FP = count of wrongly rejected safe borrowers,
+    •	OpsCost = fixed penalty for each (say $500–$1000).
+    • α: fraction of the gross interest income treated as lost profit or Bank Interest income share lost due to FP
+    
+    FN (False Negative) = loan approved, borrower defaults → repayment lost.
+    
+    FP (False Positive) = loan rejected though safe → lost profit + operational cost.
 
-Total Cost
-Cost=(FN×LGD×EAD)+(FP×CostFPE)
-Total Cost= FN Cost + FP Cost = (LGD× ∑EAD)+(α× (∑ Interest Income) +OpsCost])
-Where:
-•	FN = count of missed defaulters,
-•	EAD = actual loan amount per FN,
-•	LGD = assumed recovery fraction (say 0.6), that user can select in slicer
-•	FP = count of wrongly rejected safe borrowers,
-•	OpsCost = fixed penalty for each (say $500–$1000).
-• α: fraction of the gross interest income treated as lost profit or Bank Interest income share lost due to FP
 
-FN (False Negative) = loan approved, borrower defaults → repayment lost.
-
-FP (False Positive) = loan rejected though safe → lost profit + operational cost.
-
-
-📊 Risk Groups defined dynamically:
-
-Safe → PD < threshold (low-risk, auto-approve).
-Medium → near threshold (borderline, manual review).
-High Risky → PD > threshold (reject).
-
-Cost-sensitive threshold selector (FN & FP balance).
-Borrowers segmented into Safe, Medium, Risky.
-Risky = high loan size, high loan-to-income, high PD.
-Risk Monitoring
+    📊 Risk Groups defined dynamically:
+    
+    Safe → PD < threshold (low-risk, auto-approve).
+    Medium → near threshold (borderline, manual review).
+    High Risky → PD > threshold (reject).
+    
+    Cost-sensitive threshold selector (FN & FP balance).
+    Borrowers segmented into Safe, Medium, Risky.
+    Risky = high loan size, high loan-to-income, high PD.
+    Risk Monitoring
 
 🔹Early warning indicators:
 
