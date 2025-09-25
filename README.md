@@ -69,17 +69,17 @@ Three tabs to help decision-makers:
    
     Where:
    
-    •	FN = count of missed defaulters,
-   
-    •	EAD = actual loan amount per FN,
-   
-    •	LGD = assumed recovery fraction (say 0.6), that user can select in slicer
-   
-    •	FP = count of wrongly rejected safe borrowers,
-   
-    •	OpsCost = fixed penalty for each (say $500–$1000).
-   
-    •   α: fraction of the gross interest income treated as lost profit or Bank Interest income share lost due to FP
+        •	FN = count of missed defaulters,
+       
+        •	EAD = actual loan amount per FN,
+       
+        •	LGD = assumed recovery fraction (say 0.6), that user can select in slicer
+       
+        •	FP = count of wrongly rejected safe borrowers,
+       
+        •	OpsCost = fixed penalty for each (say $500–$1000).
+       
+        •   α: fraction of the gross interest income treated as lost profit or Bank Interest income share lost due to FP
    
     
     FN (False Negative) = loan approved, borrower defaults → repayment lost.
@@ -95,34 +95,43 @@ Three tabs to help decision-makers:
     Medium → near threshold (borderline, manual review).
    
     High Risky → PD > threshold (reject).
+
    
-    
+    Insights:
+   
     Cost-sensitive threshold selector (FN & FP balance).
 
     Borrowers segmented into Safe, Medium, Risky.
    
     Risky = high loan size, high loan-to-income, high PD.
+
    
-    Risk Monitoring
+3) Risk Monitoring
 
-🔹Early warning indicators:
+    🔹Early warning indicators:
 
-Loan-to-Income / Debt-to-Income > 0.6
-High loan interest rate more likely default
-Credit history < 2 years
-Higher Loan Grade
-These can be tracked as alerts for proactive monitoring.
+        Loan-to-Income / Debt-to-Income > 0.6
+   
+        High loan interest rate more likely default
+   
+        Credit history < 2 years
+   
+        Higher Loan Grade
+   
+        These can be tracked as alerts for proactive monitoring.
 
 
 🔹 Deliverables
 
 Power BI Dashboard → interactive insights & cost-based risk grouping.
+
 Jupyter Notebooks → data prep, model training, threshold analysis.
 
 
 🔹 Tech Stack
 
 Python → Pandas, Scikit-learn, XGBoost, Joblib
+
 Power BI → Interactive dashboarding
 
 
@@ -131,6 +140,7 @@ Power BI → Interactive dashboarding
 🔹 Recognition
 
 🏆 Problem Solver Title – August #DataDNA Challenge
+
 🙌 Continuing the journey with the September submission.
 
 
@@ -138,13 +148,12 @@ Power BI → Interactive dashboarding
 
 Clone this repo:
 
-git clone https://github.com/your-username/Onyx-Data-Challenge-Sept25
-cd Onyx-Data-Challenge-Sept25
+    git clone https://github.com/your-username/Onyx-Data-Challenge-Sept25
+    cd Onyx-Data-Challenge-Sept25
 
 
 
-Install dependencies:
-pip install -r requirements.txt
+Install dependencies: pip install -r requirements.txt
 
 
 Run Streamlit app: WIP streamlit run app.py
