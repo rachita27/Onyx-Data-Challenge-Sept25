@@ -22,15 +22,18 @@ My solution combines machine learning (XGBoost) with a Power BI dashboard and a 
     
     Power transformation for right-skewed distributions.
 
-🔹 Modeling
-Models tested: Logistic Regression, Random Forest, XGBoost.
-Hyperparameter tuning with GridSearch.
-Optimized for F1-score (balances recall & precision).
 
-Best Model: XGBoost
-Accuracy: 93%
-F1 Score: 82%
-ROC-AUC: 85.6%
+🔹 Modeling
+
+    Models tested: Logistic Regression, Random Forest, XGBoost.
+    
+    Hyperparameter tuning with GridSearch.
+    
+    Optimized for F1-score (balances recall & precision) & metrics optimised to:
+    Best Model: XGBoost
+    Accuracy: 93%
+    F1 Score: 82%
+    ROC-AUC: 85.6%
 
 ⚖️ Why F1?
 Dataset is imbalanced → accuracy is misleading. F1 ensures the model is neither too strict (precision-heavy, rejecting good borrowers) nor too lenient (recall-heavy, approving risky borrowers).
