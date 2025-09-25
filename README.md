@@ -122,6 +122,28 @@ Three tabs to help decision-makers:
         These can be tracked as alerts for proactive monitoring.
 
 
+    🔹Nova Bank: Credit Risk Evaluation App
+
+        🔎 Overview
+        
+        This Streamlit application is designed to evaluate and adjust credit risk predictions for bank customers.
+        It allows analysts and business users to:
+        
+        Upload and explore customer loan data
+        
+        Predict the likelihood of loan default using a trained ML model
+        
+        Perform what-if analysis by adjusting key financial factors (loan-to-income ration, credit_utilisation_rate, interest rate, etc.)
+        
+        Visualize and compare risk profiles before and after adjustments
+
+        ⚙️ Features
+        
+        ✅ Data Upload & Preview – Upload CSV files and explore the dataset
+        ✅ Preprocessing – Encodes categorical features, handles missing values
+        ✅ Credit Risk Prediction – ML model predicts probability of default
+        ✅ What-If Analysis – Interactive sliders to adjust factors and recalculate default risk
+   
 
 🔹 Deliverables
 
@@ -129,7 +151,10 @@ Power BI Dashboard → interactive insights & cost-based risk grouping.
 
 Jupyter Notebooks → data prep, model training, threshold analysis.
 
+🌐 Live Demo
 
+The app is deployed on Streamlit Cloud:
+👉 [![Streamlit App](https://img.shields.io/badge/Streamlit-Live%20Demo-brightgreen?logo=streamlit)](https://onyx-data-challenge-sept25-creditrisk-evaluation.streamlit.app/)
 
 🔹 Tech Stack
 
