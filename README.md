@@ -62,17 +62,28 @@ Three tabs to help decision-makers:
     Traditional 0.5 cutoff was replaced with a cost-based threshold:
     
     Total Cost
+   
     Cost=(FN×LGD×EAD)+(FP×CostFPE)
+   
     Total Cost= FN Cost + FP Cost = (LGD× ∑EAD)+(α× (∑ Interest Income) +OpsCost])
+   
     Where:
+   
     •	FN = count of missed defaulters,
+   
     •	EAD = actual loan amount per FN,
+   
     •	LGD = assumed recovery fraction (say 0.6), that user can select in slicer
+   
     •	FP = count of wrongly rejected safe borrowers,
+   
     •	OpsCost = fixed penalty for each (say $500–$1000).
-    • α: fraction of the gross interest income treated as lost profit or Bank Interest income share lost due to FP
+   
+    •   α: fraction of the gross interest income treated as lost profit or Bank Interest income share lost due to FP
+   
     
     FN (False Negative) = loan approved, borrower defaults → repayment lost.
+   
     
     FP (False Positive) = loan rejected though safe → lost profit + operational cost.
 
@@ -80,12 +91,18 @@ Three tabs to help decision-makers:
     📊 Risk Groups defined dynamically:
     
     Safe → PD < threshold (low-risk, auto-approve).
+
     Medium → near threshold (borderline, manual review).
+   
     High Risky → PD > threshold (reject).
+   
     
     Cost-sensitive threshold selector (FN & FP balance).
+
     Borrowers segmented into Safe, Medium, Risky.
+   
     Risky = high loan size, high loan-to-income, high PD.
+   
     Risk Monitoring
 
 🔹Early warning indicators:
