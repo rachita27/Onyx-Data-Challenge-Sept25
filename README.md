@@ -1,7 +1,6 @@
 📌 Credit Risk Analytics Challenge – Nova Bank
 
 
-
 🔹 Project Overview
 
 This project was developed as part of the Nova Bank Credit Risk Analytics Challenge organized by Onyx Data and ZoomCharts (#DataDNA).
@@ -16,9 +15,12 @@ My solution combines machine learning (XGBoost) with a Power BI dashboard and a 
 
 
 🔹 Data Preparation
-Null value imputation (category-based).
-Ordinal scaling, standard scaling, one-hot encoding.
-Power transformation for right-skewed distributions.
+
+    Null value imputation (category-based).
+    
+    Ordinal scaling, standard scaling, one-hot encoding.
+    
+    Power transformation for right-skewed distributions.
 
 🔹 Modeling
 Models tested: Logistic Regression, Random Forest, XGBoost.
