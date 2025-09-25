@@ -36,13 +36,17 @@ Dataset is imbalanced → accuracy is misleading. F1 ensures the model is neithe
 📌 Power BI Dashboard
 
 Three tabs to help decision-makers:
-🔹 Factor Importance
+1) Factor Importance
 
-Income ↓ default risk.
-Loan-to-income, debt-to-income, and loan-to-interest ↑ default risk.
-Loan Grade ↑ default risk.
-Past defaults & risky loan intents (debt consolidation, medical) = higher risk.
-Flexibility: user can select threshold → groups update dynamically.
+    Income ↓ default risk.
+   
+    Loan-to-income, debt-to-income, and loan-to-interest ↑ default risk.
+   
+    Loan Grade ↑ default risk.
+   
+    Past defaults & risky loan intents (debt consolidation, medical) = higher risk.
+   
+    Flexibility: user can select threshold → groups update dynamically.
 
 🔹 Cost-Sensitive Thresholding & Risk Profiles
 
