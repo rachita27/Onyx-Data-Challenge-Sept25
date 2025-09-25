@@ -91,20 +91,20 @@ Three tabs to help decision-makers:
 
     📊 Risk Groups defined dynamically:
     
-    Safe → PD < threshold (low-risk, auto-approve).
-
-    Medium → near threshold (borderline, manual review).
-   
-    High Risky → PD > threshold (reject).
+        Safe → PD < threshold (low-risk, auto-approve).
+    
+        Medium → near threshold (borderline, manual review).
+       
+        High Risky → PD > threshold (reject).
 
    
     Insights:
    
-    Cost-sensitive threshold selector (FN & FP balance).
-
-    Borrowers segmented into Safe, Medium, Risky.
-   
-    Risky = high loan size, high loan-to-income, high PD.
+        Cost-sensitive threshold selector (FN & FP balance).
+    
+        Borrowers segmented into Safe, Medium, Risky.
+       
+        Risky = high loan size, high loan-to-income, high PD.
 
    
 3) Risk Monitoring
