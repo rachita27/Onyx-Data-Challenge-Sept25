@@ -96,7 +96,7 @@ Python → Pandas, Scikit-learn, XGBoost, Joblib
 Power BI → Interactive dashboarding
 
 
-📷 Dashboard Preview ![Dashboard Preview](Fitness_Onyx_Challenge.png)
+📷 Dashboard Preview ![Dashboard Preview](Nova_Bank_Credit_Analysis.png)
 
 🔹 Recognition
 
