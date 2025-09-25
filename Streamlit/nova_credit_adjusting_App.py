@@ -56,7 +56,7 @@ with col2:
 
 @st.cache_data
 def clean_data():
-    df = pd.read_csv("C:\\Users\\rachi\\OneDrive\\Desktop\\Python Learning\\onyx_sept\\Data_Code\\Clean_Credit.csv")
+    df = pd.read_csv(os.path.join(BASE_DIR, "models", "Clean_Credit.csv"))
     return df
 
 df = clean_data()
