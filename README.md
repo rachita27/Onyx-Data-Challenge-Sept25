@@ -1,6 +1,7 @@
 📌 Credit Risk Analytics Challenge – Nova Bank
 
 
+    
 🔹 Project Overview
 
 This project was developed as part of the Nova Bank Credit Risk Analytics Challenge organized by Onyx Data and ZoomCharts (#DataDNA).
@@ -121,11 +122,13 @@ Three tabs to help decision-makers:
         These can be tracked as alerts for proactive monitoring.
 
 
+
 🔹 Deliverables
 
 Power BI Dashboard → interactive insights & cost-based risk grouping.
 
 Jupyter Notebooks → data prep, model training, threshold analysis.
+
 
 
 🔹 Tech Stack
@@ -135,13 +138,17 @@ Python → Pandas, Scikit-learn, XGBoost, Joblib
 Power BI → Interactive dashboarding
 
 
+
 📷 Dashboard Preview ![Dashboard Preview](Nova_Bank_Credit_Analysis.png)
+
+
 
 🔹 Recognition
 
 🏆 Problem Solver Title – August #DataDNA Challenge
 
 🙌 Continuing the journey with the September submission.
+
 
 
 🔹 How to Run Locally
