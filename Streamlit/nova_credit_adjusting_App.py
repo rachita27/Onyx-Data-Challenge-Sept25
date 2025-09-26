@@ -75,7 +75,8 @@ col_nm = ['person_home_ownership',
  'loan_term_months',
  'past_delinquencies']
 
-tab1, tab2, tab3 = st.tabs(["Data Required Info", "Data Upload","Risk Adjustment Tool"])
+tab1, tab2, tab3 =  st.tabs( ["Data Input Guide","Predictions","What-If Analysis"])
+# st.tabs(["Data Required Info", "Data Upload","Risk Adjustment Tool"])
 
 with tab1:
     st.text("Data Sample View:")
