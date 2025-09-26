@@ -230,7 +230,7 @@ with tab2:
         # Styling function
         def highlight_special_cols(row):
             styles = [""] * len(row)  # default = no style
-            if row["loan_status"] == 1:
+            if row["loan_status_predicted"] == 1:
                 for col in special_cols:
                     styles[row.index.get_loc(col)] = "background-color: lightcoral; color: white; font-weight: bold;"
             else:
