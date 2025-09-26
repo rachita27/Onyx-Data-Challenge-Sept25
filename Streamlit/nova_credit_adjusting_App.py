@@ -30,7 +30,7 @@ with col1:
     st.image(os.path.join(BASE_DIR, "models", "nova_logo.png"), width=90)
 
 with col2:
-    st.markdown("<h3>Nova Bank: Credit Risk Evaluation App </h3>", unsafe_allow_html=True)
+    st.markdown("<h4>Nova Bank: Credit Risk Evaluation App </h4>", unsafe_allow_html=True)
 
     # Custom CSS to prevent wrapping
     # st.markdown(
@@ -80,9 +80,9 @@ tab1, tab2, tab3 = st.tabs(["Data Required Info", "Data Upload","Risk Adjustment
 with tab1:
     st.text("Data Sample View:")
     st.write(df.sample(n =2))
-    st.markdown("<h4> Please Make Sure Data is uploaded above shown format. </h4>", unsafe_allow_html=True)
-    st.markdown("<h5> Select the Column & Check the Acceptable Value </h5>", unsafe_allow_html=True)
-    st.markdown("<h6> (**Only for Categorical Columns) </h6>", unsafe_allow_html=True)
+    st.markdown("<h5> Please Make Sure Data is uploaded above shown format. </h5>", unsafe_allow_html=True)
+    st.markdown("<h6> Select the Column & Check the Acceptable Value </h6>", unsafe_allow_html=True)
+    st.markdown("<h7> (**Only for Categorical Columns) </h6>", unsafe_allow_html=True)
     optn1 = st.selectbox("Select the column name: ",col_nm)
     st.write(f"Column Name:{optn1} Unique Values: {df[optn1].unique().tolist()} ")
 
@@ -91,7 +91,8 @@ with tab2:
 
     uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
     int_lngth = joblib.load(os.path.join(BASE_DIR, "models", "interest_rt.joblib"))
-    
+    st.markdown("<h6> Here you can Upload Your Customer Data With all necessary Columns </h6>", unsafe_allow_html=True)
+    st.markdown("<h8> For Demo Purpose you can export the table from Tab1 </h8>", unsafe_allow_html=True)
     if uploaded_file is not None:
         # st.success("✅ File uploaded successfully!")
         df_f = pd.read_csv(uploaded_file) 
