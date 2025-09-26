@@ -1,0 +1,7 @@
+﻿client_ID,person_age,person_income,person_home_ownership,person_emp_length,loan_intent,loan_grade,loan_amnt,loan_int_rate,loan_percent_income,cb_person_default_on_file,cb_person_cred_hist_length,gender,marital_status,education_level,country,state,city,city_latitude,city_longitude,employment_type,loan_term_months,loan_to_income_ratio,other_debt,debt_to_income_ratio,open_accounts,credit_utilization_ratio,past_delinquencies
+CUST_00027,21,11000,MORTGAGE,3,VENTURE,E,4575,17.74,0.42,Y,3,Female,Single,Bachelor,Canada,Ontario,Toronto,43.6532,-79.3832,Full-time,36,0.415909091,2129.21693,0.609474266,14,0.814659646,0
+CUST_00028,23,11000,OWN,0,PERSONAL,A,1400,9.32,0.13,N,3,Female,Single,High School,USA,California,San Francisco,37.7749,-122.4194,Full-time,36,0.127272727,1089.418699,0.226310791,9,0.80367852,1
+CUST_00029,24,65000,RENT,6,HOMEIMPROVEMENT,B,32500,9.99,0.5,N,3,Female,Single,High School,UK,Scotland,Edinburgh,55.9533,-3.1883,Full-time,,0.5,6983.784375,0.607442837,14,0.946974749,0
+CUST_00030,21,11389,OTHER,5,EDUCATION,C,4000,12.84,0.35,Y,2,Male,Widowed,High School,UK,Wales,Swansea,51.6214,-3.9436,Part-time,24,0.351216086,1945.330055,0.522023888,5,0.751612677,0
+CUST_00031,21,11520,OWN,5,MEDICAL,B,2000,11.12,0.17,N,3,Male,Single,Master,USA,California,Los Angeles,34.0522,-118.2437,Part-time,36,0.173611111,1827.634738,0.33225996,4,0.326142648,0
+CUST_00032,25,120000,RENT,2,VENTURE,A,32000,6.62,0.27,N,2,Male,Married,High School,UK,England,Manchester,53.4808,-2.2426,Part-time,60,0.266666667,11274.35788,0.360619649,,0.63235907,0
